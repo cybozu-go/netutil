@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	// ErrIPv6 is a error that the module does not support IPv6.
+	// ErrIPv6 is an error that a function does not support IPv6.
 	ErrIPv6 = errors.New("only IPv4 address is supported")
 )
 
