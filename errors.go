@@ -2,8 +2,8 @@ package netutil
 
 import "strings"
 
-// network errors in golang is difficult to distinguish.
-// src/syscall/zerrors_linux_amd64.go have these definitions:
+// network errors in golang are difficult to distinguish.
+// src/syscall/zerrors_linux_amd64.go has these definitions:
 //     var errors = [...]string{
 //         ...
 //         101: "network is unreachable",
