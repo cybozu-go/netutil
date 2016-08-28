@@ -13,6 +13,7 @@ Features
 --------
 
 * Functions for IPv4 address space.
+* Functions to identify network errors.
 * Utilities for TCP keep-alive.
 * Interface to half-close connections.
 * [golang.org/x/net/netutil](https://godoc.org/golang.org/x/net/netutil) functions.
