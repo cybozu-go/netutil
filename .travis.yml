@@ -1,8 +1,8 @@
 sudo: false
 language: go
 go:
-  - 1.6
-  - tip
+  - stable
+  - master
 
 before_install:
   - go get github.com/golang/lint/golint
