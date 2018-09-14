@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Opt in to [Go modules](https://github.com/golang/go/wiki/Modules).
+
 ## [1.1.0] - 2016-09-11
 ### Added
 - `CipherSuiteString` returns string for tls.TLS_* constants.
