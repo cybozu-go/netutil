@@ -1,13 +1,12 @@
 [![GitHub release](https://img.shields.io/github/release/cybozu-go/netutil.svg?maxAge=60)][releases]
 [![GoDoc](https://godoc.org/github.com/cybozu-go/netutil?status.svg)][godoc]
-[![Build Status](https://travis-ci.org/cybozu-go/netutil.svg?branch=master)](https://travis-ci.org/cybozu-go/netutil)
+[![CircleCI](https://circleci.com/gh/cybozu-go/netutil.svg?style=svg)](https://circleci.com/gh/cybozu-go/netutil)
 [![Go Report Card](https://goreportcard.com/badge/github.com/cybozu-go/netutil)](https://goreportcard.com/report/github.com/cybozu-go/netutil)
-[![License](https://img.shields.io/github/license/cybozu-go/netutil.svg?maxAge=2592000)](LICENSE)
 
 Add-ons for networking
 ======================
 
-This package overrides a package of the same name .
+This package overrides a package of the same name.
 
 Features
 --------
