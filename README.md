@@ -1,6 +1,6 @@
 [![GitHub release](https://img.shields.io/github/release/cybozu-go/netutil.svg?maxAge=60)][releases]
+![CI](https://github.com/cybozu-go/netutil/workflows/CI/badge.svg)
 [![Go Reference](https://pkg.go.dev/badge/cybozu-go/netutil.svg)](https://pkg.go.dev/cybozu-go/netutil)
-[![CircleCI](https://circleci.com/gh/cybozu-go/netutil.svg?style=svg)](https://circleci.com/gh/cybozu-go/netutil)
 [![Go Report Card](https://goreportcard.com/badge/github.com/cybozu-go/netutil)](https://goreportcard.com/report/github.com/cybozu-go/netutil)
 
 Add-ons for networking
