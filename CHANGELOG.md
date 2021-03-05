@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.4.0] - 2021-03-05
+
+### Added
+- MTU detection utility (#11)
+
 ## [1.3.0] - 2020-12-15
 
 ### Added
@@ -27,7 +32,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `IsNetworkUnreachable`, `IsConnectionRefused`, `IsNoRouteToHost` functions to identify network errors.
 
-[Unreleased]: https://github.com/cybozu-go/log/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/cybozu-go/log/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/cybozu-go/log/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/cybozu-go/log/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/cybozu-go/log/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/cybozu-go/log/compare/v1.0.1...v1.1.0
