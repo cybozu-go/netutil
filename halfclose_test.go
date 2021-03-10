@@ -2,6 +2,7 @@ package netutil
 
 import (
 	"bytes"
+	"fmt"
 	"io/ioutil"
 	"net"
 	"testing"
@@ -16,12 +17,14 @@ func TestHalfCloser(t *testing.T) {
 		t.Skip(err)
 	}
 
+	errCh := make(chan error, 1)
 	done := make(chan struct{})
 
 	go func() {
+		defer close(done)
 		c, err := l.Accept()
 		if err != nil {
-			t.Error(err)
+			errCh <- err
 			return
 		}
 		defer c.Close()
@@ -33,16 +36,15 @@ func TestHalfCloser(t *testing.T) {
 		c.Write([]byte("test"))
 		err = hc.CloseWrite()
 		if err != nil {
-			t.Fatal(err)
+			errCh <- err
+			return
 		}
 		data, err := ioutil.ReadAll(c)
 		if err != nil {
-			t.Error(err)
+			errCh <- err
+		} else if !bytes.Equal(data, []byte("ack")) {
+			errCh <- fmt.Errorf(`!bytes.Equal(data, []byte("ack")), data=%s`, data)
 		}
-		if !bytes.Equal(data, []byte("ack")) {
-			t.Error(`!bytes.Equal(data, []byte("ack"))`)
-		}
-		close(done)
 	}()
 
 	c, err := net.DialTimeout("tcp", "localhost:15346", 1*time.Second)
@@ -68,4 +70,9 @@ func TestHalfCloser(t *testing.T) {
 	}
 
 	<-done
+	select {
+	case err2 := <-errCh:
+		t.Error(err2)
+	default:
+	}
 }

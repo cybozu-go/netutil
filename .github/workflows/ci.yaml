@@ -9,7 +9,10 @@ env:
 jobs:
   test:
     name: Small test
-    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        os: ["ubuntu-20.04", "macos-latest"]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
@@ -19,3 +22,5 @@ jobs:
       - run: go build .
       - run: go test -race -v -count 1 .
       - run: go vet .
+      - run: cd /tmp; go get honnef.co/go/tools/cmd/staticcheck
+      - run: staticcheck ./...
