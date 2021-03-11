@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.4.1] - 2021-03-11
+
+### Changed
+- Make `DetectMTU` linux specific (#14)
+- Build and test on MacOS (#14)
+
 ## [1.4.0] - 2021-03-05
 
 ### Added
@@ -32,9 +38,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `IsNetworkUnreachable`, `IsConnectionRefused`, `IsNoRouteToHost` functions to identify network errors.
 
-[Unreleased]: https://github.com/cybozu-go/log/compare/v1.4.0...HEAD
-[1.4.0]: https://github.com/cybozu-go/log/compare/v1.3.0...v1.4.0
-[1.3.0]: https://github.com/cybozu-go/log/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/cybozu-go/log/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/cybozu-go/log/compare/v1.0.1...v1.1.0
-[1.0.1]: https://github.com/cybozu-go/log/compare/v1.0.0...v1.0.1
+[Unreleased]: https://github.com/cybozu-go/netutil/compare/v1.4.1...HEAD
+[1.4.1]: https://github.com/cybozu-go/netutil/compare/v1.4.0...v1.4.1
+[1.4.0]: https://github.com/cybozu-go/netutil/compare/v1.3.0...v1.4.0
+[1.3.0]: https://github.com/cybozu-go/netutil/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/cybozu-go/netutil/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/cybozu-go/netutil/compare/v1.0.1...v1.1.0
+[1.0.1]: https://github.com/cybozu-go/netutil/compare/v1.0.0...v1.0.1
