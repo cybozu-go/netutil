@@ -26,6 +26,6 @@ Read [the documentation](https://pkg.go.dev/github.com/cybozu-go/netutil).
 License
 -------
 
-[MIT](https://opensource.org/licenses/MIT)
+netutil is licensed under the Apache License, Version 2.0.
 
 [releases]: https://github.com/cybozu-go/netutil/releases
