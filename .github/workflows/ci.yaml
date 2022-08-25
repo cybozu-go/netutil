@@ -22,5 +22,8 @@ jobs:
       - run: go build .
       - run: go test -race -v -count 1 .
       - run: go vet .
-      - run: cd /tmp; go get honnef.co/go/tools/cmd/staticcheck
-      - run: staticcheck ./...
+      - name: staticcheck
+        run: |
+          mkdir -p bin
+          GOBIN=$(pwd)/bin go install honnef.co/go/tools/cmd/staticcheck@latest
+          ./bin/staticcheck .
