@@ -32,7 +32,7 @@ func TestIntToIP4(t *testing.T) {
 func TestHostsFunc(t *testing.T) {
 	t.Parallel()
 
-	_, n, err := net.ParseCIDR("12.34.56.00/30")
+	_, n, err := net.ParseCIDR("12.34.56.0/30")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -42,12 +42,12 @@ func TestHostsFunc(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	if !f().Equal(net.ParseIP("12.34.56.01")) {
-		t.Error("f() != 12.34.56.01")
+	if !f().Equal(net.ParseIP("12.34.56.1")) {
+		t.Error("f() != 12.34.56.1")
 	}
 
-	if !f().Equal(net.ParseIP("12.34.56.02")) {
-		t.Error("f() != 12.34.56.02")
+	if !f().Equal(net.ParseIP("12.34.56.2")) {
+		t.Error("f() != 12.34.56.2")
 	}
 
 	if f() != nil {
