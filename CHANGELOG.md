@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Change LICENSE from MIT to Apache2.0 (#18)
+- Update dependencies (#19)
+    - Update Golang used for testing from 1.15 to 1.18
+
 ## [1.4.2] - 2021-07-30
 
 ### Changed
