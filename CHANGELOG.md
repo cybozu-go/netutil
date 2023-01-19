@@ -15,25 +15,25 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.4.3] - 2022-08-26
 
 ### Changed
-- Change LICENSE from MIT to Apache2.0 (#18)
-- Update dependencies (#19)
+- Change LICENSE from MIT to Apache2.0 ([#18](https://github.com/cybozu-go/netutil/pull/18))
+- Update dependencies ([#19](https://github.com/cybozu-go/netutil/pull/19))
     - Update Golang used for testing from 1.15 to 1.18
 
 ## [1.4.2] - 2021-07-30
 
 ### Changed
-- Update dependencies (#17)
+- Update dependencies ([#17](https://github.com/cybozu-go/netutil/pull/17))
 
 ## [1.4.1] - 2021-03-11
 
 ### Changed
-- Make `DetectMTU` linux specific (#14)
-- Build and test on MacOS (#14)
+- Make `DetectMTU` linux specific ([#14](https://github.com/cybozu-go/netutil/pull/14))
+- Build and test on MacOS ([#14](https://github.com/cybozu-go/netutil/pull/14))
 
 ## [1.4.0] - 2021-03-05
 
 ### Added
-- MTU detection utility (#11)
+- MTU detection utility ([#11](https://github.com/cybozu-go/netutil/pull/11))
 
 ## [1.3.0] - 2020-12-15
 
