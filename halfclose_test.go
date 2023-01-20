@@ -3,7 +3,7 @@ package netutil
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net"
 	"testing"
 	"time"
@@ -39,7 +39,7 @@ func TestHalfCloser(t *testing.T) {
 			errCh <- err
 			return
 		}
-		data, err := ioutil.ReadAll(c)
+		data, err := io.ReadAll(c)
 		if err != nil {
 			errCh <- err
 		} else if !bytes.Equal(data, []byte("ack")) {
@@ -53,7 +53,7 @@ func TestHalfCloser(t *testing.T) {
 	}
 	defer c.Close()
 
-	data, err := ioutil.ReadAll(c)
+	data, err := io.ReadAll(c)
 	if err != nil {
 		t.Error(err)
 	}

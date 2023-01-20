@@ -2,7 +2,7 @@ package netutil
 
 import (
 	"bytes"
-	"io/ioutil"
+	"io"
 	"net"
 	"os"
 	"testing"
@@ -44,7 +44,7 @@ func TestTCPKeepAlive(t *testing.T) {
 	defer c.Close()
 	SetKeepAlive(c)
 
-	data, err := ioutil.ReadAll(c)
+	data, err := io.ReadAll(c)
 	if err != nil {
 		t.Error(err)
 	}
@@ -56,7 +56,7 @@ func TestTCPKeepAlive(t *testing.T) {
 func TestKeepAliveListener(t *testing.T) {
 	t.Parallel()
 
-	f, err := ioutil.TempFile("", "gotest")
+	f, err := os.CreateTemp("", "gotest")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -89,7 +89,7 @@ func TestKeepAliveListener(t *testing.T) {
 	defer c.Close()
 	SetKeepAlive(c) // noop for UNIX-domain socket
 
-	data, err := ioutil.ReadAll(c)
+	data, err := io.ReadAll(c)
 	if err != nil {
 		t.Error(err)
 	}
