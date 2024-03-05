@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+- Update dependencies in [#30](https://github.com/cybozu-go/netutil/pull/30)
+  - Upgrade direct dependencies in go.mod
+  - Update Golang used for testing from 1.21 to 1.22
+
 ## [1.4.6] - 2023-11-14
 
 ### Changed
