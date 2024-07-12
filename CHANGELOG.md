@@ -5,6 +5,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.4.8] - 2024-07-12
+
+### Changed
+- Bump golang.org/x/net from 0.22.0 to 0.23.0 [#32](https://github.com/cybozu-go/netutil/pull/32)
+- Update dependencies in [#33](https://github.com/cybozu-go/netutil/pull/33)
+  - Upgrade direct dependencies in go.mod
+  - Update GitHub actions
+- Update release procedure to use gh command [#34](https://github.com/cybozu-go/netutil/pull/34)
+
 ## [1.4.7] - 2024-03-08
 
 ### Changed
@@ -80,7 +89,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `IsNetworkUnreachable`, `IsConnectionRefused`, `IsNoRouteToHost` functions to identify network errors.
 
-[Unreleased]: ttps://github.com/cybozu-go/netutil/compare/v1.4.7...HEAD
+[Unreleased]: https://github.com/cybozu-go/netutil/compare/v1.4.7...HEAD
+[1.4.8]: https://github.com/cybozu-go/netutil/compare/v1.4.7...v1.4.8
 [1.4.7]: https://github.com/cybozu-go/netutil/compare/v1.4.6...v1.4.7
 [1.4.6]: https://github.com/cybozu-go/netutil/compare/v1.4.5...v1.4.6
 [1.4.5]: https://github.com/cybozu-go/netutil/compare/v1.4.4...v1.4.5
