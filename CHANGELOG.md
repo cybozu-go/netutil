@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.4.9] - 2024-11-12
+
+### Changed
+- Update dependencies in [#36](https://github.com/cybozu-go/netutil/pull/36)
+  - Upgrade direct dependencies in go.mod
+
 ## [1.4.8] - 2024-07-12
 
 ### Changed
@@ -89,7 +95,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `IsNetworkUnreachable`, `IsConnectionRefused`, `IsNoRouteToHost` functions to identify network errors.
 
-[Unreleased]: https://github.com/cybozu-go/netutil/compare/v1.4.7...HEAD
+[Unreleased]: https://github.com/cybozu-go/netutil/compare/v1.4.9...HEAD
+[1.4.9]: https://github.com/cybozu-go/netutil/compare/v1.4.8...v1.4.9
 [1.4.8]: https://github.com/cybozu-go/netutil/compare/v1.4.7...v1.4.8
 [1.4.7]: https://github.com/cybozu-go/netutil/compare/v1.4.6...v1.4.7
 [1.4.6]: https://github.com/cybozu-go/netutil/compare/v1.4.5...v1.4.6
