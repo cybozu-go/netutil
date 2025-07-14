@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Update dependencies in [#39](https://github.com/cybozu-go/netutil/pull/39)
     - Upgrade direct dependencies in go.mod
     - Update Ubuntu used for testing from 22.04 to 24.04
+- Update dependencies in [#40](https://github.com/cybozu-go/netutil/pull/40)
+    - Upgrade direct dependencies in go.mod
 
 ## [1.4.9] - 2024-11-12
 
