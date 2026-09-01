@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'main'
+permissions:
+  contents: read
+  id-token: write
 jobs:
   test:
     name: Small test
@@ -16,6 +19,9 @@ jobs:
       - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6.5.0
         with:
           go-version-file: go.mod
+      - uses: flatt-security/setup-takumi-guard-golang@1c8aa7498f7f635fbd6ad6a0f436d03092b3502d # v1.1.0
+        with:
+          bot-id: ${{ vars.TAKUMI_GUARD_BOT_ID }}
       - run: test -z "$(gofmt -s -l . | tee /dev/stderr)"
       - run: go build .
       - run: go test -race -v -count 1 .
