@@ -16,7 +16,7 @@ type equalIP struct {
 //
 // Deprecated: This will be removed in the next major version to drop the
 // dependency on Gomega. Copy the implementation into your test code, or use
-// Gomega's [github.com/onsi/gomega.Satisfy] with [net.IP.Equal].
+// Gomega's [github.com/onsi/gomega.Satisfy] with a bound method such as `ip.Equal`.
 func EqualIP(ip net.IP) types.GomegaMatcher {
 	return equalIP{expected: ip}
 }
