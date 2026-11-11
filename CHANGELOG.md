@@ -5,6 +5,18 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Update dependencies in [#49](https://github.com/cybozu-go/netutil/pull/49)
+    - Upgrade direct dependencies in go.mod
+    - Update Golang used for testing from 1.26 to 1.27
+    - Update Ubuntu used for testing from 24.04 to 26.04
+    - Update GitHub actions
+
+### Deprecated
+
+- `EqualIP` is deprecated and will be removed in the next major version [#49](https://github.com/cybozu-go/netutil/pull/49)
+
 ## [1.4.12] - 2026-03-09
 
 ### Changed
