@@ -12,7 +12,11 @@ type equalIP struct {
 	expected net.IP
 }
 
-// EqualIP is a custom mather of Gomega to assert IP equivalence
+// EqualIP is a custom matcher of Gomega to assert IP equivalence
+//
+// Deprecated: This will be removed in the next major version to drop the
+// dependency on Gomega. Copy the implementation into your test code, or use
+// Gomega's [github.com/onsi/gomega.Satisfy] with [net.IP.Equal].
 func EqualIP(ip net.IP) types.GomegaMatcher {
 	return equalIP{expected: ip}
 }
